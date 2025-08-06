@@ -9,16 +9,18 @@ export default function Home() {
   );
 
   return (
+    <div className="flex items-center justify-center min-h-screen">
     <div className="grid w-[30rem] h-[30rem]" style={{
       gridTemplateColumns: `repeat(${gridSize}, 1fr)`,
     }}>
-      {grid.map((colour, index) => {
+      {grid.map((colour, index) => (
         <div
           key={index}
           className="border"
           style={{ backgroundColor: colour}}
         ></div>
-      })}
+      ))}
+    </div>
     </div>
   );
 }
