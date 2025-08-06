@@ -3,7 +3,8 @@
 :root {
   /* Was #ffffff */
   --background: #171717; 
-  --foreground: #171717;
+  --foreground: #ffffff;
+  --grid-border: #888888; /* example gray border */
 }
 
 @theme inline {
