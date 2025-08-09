@@ -30,9 +30,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-3">
-      <h1 className="text-2xl">Pixelart Editor</h1>
-      <p>Pixels changed: {lastClicked}</p>
+    <div className="flex flex-col items-center justify-center gap-3 h-screen">
+      <h1 className="text-3xl">Pixelart Editor</h1>
       <div className="flex items-center space-x-4">
         <label>Choose grid size: </label>
         <input 
@@ -61,6 +60,7 @@ export default function Home() {
           ></div>
         ))}
       </div>
+      <p>Pixels changes: {lastClicked}</p>
     </div>
   );
 }
